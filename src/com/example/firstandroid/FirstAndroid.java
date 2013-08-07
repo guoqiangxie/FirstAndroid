@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Spinner;
 import android.widget.Toast;
 import android.view.View;
@@ -42,6 +43,16 @@ public class FirstAndroid extends Activity {
         };
         //为下拉列表绑定事件监听器
         spinner.setOnItemSelectedListener(oisl);
+        
+      //定义数组
+                String[] provinces = getResources().getStringArray(R.array.provinces);
+                //定义数组适配器
+                ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,provinces);
+                //找到自动完成组件
+                AutoCompleteTextView atv = (AutoCompleteTextView) findViewById(R.id.AutoCompleteTextView01);
+                //为其设置适配器
+                atv.setAdapter(adapter1);
+
 
 	}
 

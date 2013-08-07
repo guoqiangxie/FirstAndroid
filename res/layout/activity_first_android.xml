@@ -30,5 +30,28 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textView2"
         android:prompt="@string/color" />
+    
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="87dp"
+        android:text="@string/province" />
+
+        <AutoCompleteTextView
+            android:id="@+id/AutoCompleteTextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="16dp"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="@string/province" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
 
 </RelativeLayout>

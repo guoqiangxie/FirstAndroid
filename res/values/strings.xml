@@ -18,4 +18,12 @@
         <item>白色 | White</item>
         <item>黄色 | Yellow</item>
     </string-array>
+    
+    <string name="province">输入省份：</string>
+    <string-array name="provinces">
+        <item>hunan</item>
+        <item>beijing</item>
+        <item>shanghai</item>
+        <item>henan</item>
+    </string-array>
 </resources>
