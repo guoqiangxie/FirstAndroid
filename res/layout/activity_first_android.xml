@@ -49,9 +49,26 @@
             android:layout_marginTop="16dp"
             android:completionThreshold="1"
             android:ems="10"
-            android:hint="@string/province" >
-
+            android:hint="@string/province">
             <requestFocus />
         </AutoCompleteTextView>
+
+        <TextView
+            android:id="@+id/dateDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/AutoCompleteTextView01"
+            android:layout_below="@+id/AutoCompleteTextView01"
+            android:layout_marginTop="37dp" />
+
+        <Button
+            android:id="@+id/pickDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dateDisplay"
+            android:layout_below="@+id/dateDisplay"
+            android:layout_marginTop="21dp"
+            android:text="@string/changeDate"
+            android:textSize="20sp" />
 
 </RelativeLayout>

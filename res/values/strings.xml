@@ -26,4 +26,6 @@
         <item>shanghai</item>
         <item>henan</item>
     </string-array>
+    
+    <string name="changeDate">改变日期</string>
 </resources>
